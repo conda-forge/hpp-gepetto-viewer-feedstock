@@ -15,7 +15,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '18'
+- '19'
 libboost_devel:
 - '1.86'
 macos_machine:
@@ -36,6 +36,3 @@ target_platform:
 - osx-64
 urdfdom:
 - '4.0'
-zip_keys:
-- - python
-  - python_impl

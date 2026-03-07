@@ -1,5 +1,5 @@
 {% set name = "hpp-gepetto-viewer" %}
-{% set version = "6.1.0" %}
+{% set version = "7.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/humanoid-path-planner/hpp-gepetto-viewer/releases/download/v{{ version }}/hpp-gepetto-viewer-{{ version }}.tar.gz
-  sha256: 466268cbcbe2cfb4f9efe1cf411365c8bf2b40c2478eb0be9af1687f13cc6415
+  sha256: c45782edc3bc2916c624f105eee8bfc6b283e1871338a8643db911d18550f102
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or python_impl == 'pypy']
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}

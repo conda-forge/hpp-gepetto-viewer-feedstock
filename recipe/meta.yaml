@@ -25,9 +25,6 @@ requirements:
     - doxygen
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-    - {{ cdt('mesa-libgl-devel') }}       # [linux]
-    - {{ cdt('mesa-dri-drivers') }}       # [linux]
-    - {{ cdt('libselinux-devel') }}       # [linux]
   host:
     - hpp-util  {{ version }}
     - hpp-statistics  {{ version }}
@@ -51,6 +48,7 @@ requirements:
     - python
     - qhull
     - qhull-static
+    - libgl-devel                         # [linux]
   run:
     - numpy
     - python

@@ -29,6 +29,7 @@ requirements:
     - hpp-util  {{ version }}
     - hpp-statistics  {{ version }}
     - hpp-pinocchio  {{ version }}
+    - hpp-python  {{ version }}
     - hpp-constraints  {{ version }}
     - hpp-core  {{ version }}
     - hpp-template-corba  {{ version }}
